@@ -25,10 +25,7 @@ if [[ ! -r "$INPUT_MD" ]]; then
 fi
 
 # Extract first H1 as document title if present, default to "Document"
-DOC_TITLE="$(awk 'match($0,/^# +(.+)$/,a){print a[1]; exit}' "$INPUT_MD" || true)"
-if [[ -z "${DOC_TITLE}" ]]; then
-  DOC_TITLE="Document"
-fi
+DOC_TITLE="Roman Shchedrin's pages"
 
 # Prefer pandoc if available
 if command -v pandoc >/dev/null 2>&1; then
@@ -38,11 +35,14 @@ if command -v pandoc >/dev/null 2>&1; then
     --from=gfm \
     --to=html5 \
     --standalone \
-    --metadata=title:"$DOC_TITLE" \
+    --metadata title:"$DOC_TITLE" \
     ${CSS_PATH:+--css "$CSS_PATH"} \
     --output "$OUTPUT_HTML" \
-    --shift-heading-level-by=-1 \
     "$INPUT_MD"
+  
+  # Remove the title block header from the generated HTML
+  sed -i '/<header id="title-block-header">/,/<\/header>/d' "$OUTPUT_HTML"
+  
   echo "Pandoc generated: $OUTPUT_HTML"
   exit 0
 fi
