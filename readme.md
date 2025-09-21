@@ -5,7 +5,7 @@ My name is Roman Shchedrin. I work as ML dev and vibe-code at my free time. I've
 - [Short term memory speed](#Short-term-memory-speed)
 - [Word Typing](#word-typing)
 - [Confusion Matrix Page](#confusion-matrix-page)
-- [newcomb](#newcomb)
+- [Newcomb](#newcomb)
 
 <!-- <details>
 <summary>short_term_memory_speed</summary> -->
