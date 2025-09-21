@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-# generate_index_html.sh — Convert a Markdown file (index.md by default) to HTML (index.html by default).
+# generate_index_html.sh — Convert a Markdown file (readme.md by default) to HTML (index.html by default).
 # side-effects: writes/overwrites the specified OUTPUT_HTML file on disk
 
 set -euo pipefail
@@ -8,12 +7,12 @@ set -euo pipefail
 # Usage/help
 if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
   echo "Usage: $(basename "$0") [INPUT_MD] [OUTPUT_HTML]"
-  echo "Defaults: INPUT_MD=index.md and OUTPUT_HTML=index.html located in the script directory."
+  echo "Defaults: INPUT_MD=readme.md and OUTPUT_HTML=index.html located in the script directory."
   exit 0
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DEFAULT_INPUT_MD="${SCRIPT_DIR}/index.md"
+DEFAULT_INPUT_MD="${SCRIPT_DIR}/readme.md"
 DEFAULT_OUTPUT_HTML="${SCRIPT_DIR}/index.html"
 
 INPUT_MD="${1:-$DEFAULT_INPUT_MD}"
