@@ -31,12 +31,14 @@ DOC_TITLE="Roman Shchedrin's pages"
 if command -v pandoc >/dev/null 2>&1; then
   CSS_PATH="${SCRIPT_DIR}/assets/style.css"
   [[ -r "$CSS_PATH" ]] || CSS_PATH=""
+  # Use relative path for CSS in the HTML output
+  CSS_RELATIVE_PATH="assets/style.css"
   pandoc \
     --from=gfm \
     --to=html5 \
     --standalone \
     --metadata title:"$DOC_TITLE" \
-    ${CSS_PATH:+--css "$CSS_PATH"} \
+    ${CSS_PATH:+--css "$CSS_RELATIVE_PATH"} \
     --output "$OUTPUT_HTML" \
     "$INPUT_MD"
   
