@@ -39,4 +39,7 @@ I needed to make some plots for my notes about ROC diagrams, but desmos doesn't 
 [Page](https://rashchedrin.github.io/visual_plot_editor/)
 [Github](https://github.com/rashchedrin/visual_plot_editor)
 
+![Visual Plot Editor](visual_plot_editor.png)
+
+
 
