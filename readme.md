@@ -36,8 +36,8 @@ Newcomb's paradox simulation implemented as a HTML+JS page. An oracle is observi
 ### Visual Plot Editor
 I needed to make some plots for my notes about ROC diagrams, but desmos doesn't allow to add free-form annotations. So I vibecoded this editor. Now it can add lines, points, braces and areas - everything I needed for a one specific plot. Maybe I'll extend it later.
 
-[Page](https://rashchedrin.github.io/visual_plot_editor/)
-[Github](https://github.com/rashchedrin/visual_plot_editor)
+[Page](https://rashchedrin.github.io/draw_plot/)
+[Github](https://github.com/rashchedrin/draw_plot)
 
 ![Visual Plot Editor](visual_plot_editor.png)
 
