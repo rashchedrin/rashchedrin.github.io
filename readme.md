@@ -7,6 +7,7 @@ My name is Roman Shchedrin. I work as ML dev and vibe-code at my free time. I've
 - [Confusion Matrix Page](#confusion-matrix-page)
 - [Newcomb](#newcomb)
 - [Visual Plot Editor](#visual-plot-editor)
+- [Is aleatory](#is-aleatory)
 
 ### Short term memory speed
 This page allows to measure your short-term memory speed. It was intendend to clearly show that short term memory is fast. I can easily recall 4 letter sequences with 100ms show time and 100ms delay.
@@ -41,5 +42,6 @@ I needed to make some plots for my notes about ROC diagrams, but desmos doesn't 
 
 ![Visual Plot Editor](visual_plot_editor.png)
 
-
-
+### Is aleatory
+It turns out that by probabilities and outcomes I can test whether or not those probabilities are aleatory or epicstemic. This allows me to dismiss one of the versions of solipsism, and a claim that prediction markets confidences are probabilities of those events. 
+[Github](https://github.com/rashchedrin/is_aleatory)
