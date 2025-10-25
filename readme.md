@@ -27,6 +27,7 @@ On this page you can play with different confusion matrix normalizations and met
 [Page](https://rashchedrin.github.io/confusion_matrix_page/)
 [Github](https://github.com/rashchedrin/confusion_matrix_page)
 
+![Confusion Matrix Page](confusion_matrix_page.png)
 ### Newcomb
 Newcomb's paradox simulation implemented as a HTML+JS page. An oracle is observing your behavior and draws conclusion about your intention. If it predicts that you'll take both envelopes, then one envelope contains $1'000 and the other contains $0. If it predicts that you'll take only envelope A, then envelope A contains $1'000'000, and envelope B contains $1'000. Test your decision theory for free!
 
